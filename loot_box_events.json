@@ -1,0 +1,114 @@
+[
+  {
+    "date": "2020-04-12",
+    "type": "Wiki\u5cf0\u503c",
+    "direction": "Wiki\u9886\u5148",
+    "g_value": 2.08,
+    "w_value": 8.17
+  },
+  {
+    "date": "2020-06-04",
+    "type": "GDELT\u5cf0\u503c",
+    "direction": "GDELT\u9886\u5148",
+    "g_value": 4.93,
+    "w_value": 5.91
+  },
+  {
+    "date": "2020-07-02",
+    "type": "Wiki\u5cf0\u503c",
+    "direction": "GDELT\u9886\u5148",
+    "g_value": 3.66,
+    "w_value": 7.45
+  },
+  {
+    "date": "2020-07-31",
+    "type": "GDELT\u5cf0\u503c",
+    "direction": "GDELT\u9886\u5148",
+    "g_value": 5.24,
+    "w_value": 6.07
+  },
+  {
+    "date": "2020-08-27",
+    "type": "GDELT\u5cf0\u503c",
+    "direction": "GDELT\u9886\u5148",
+    "g_value": 3.76,
+    "w_value": 5.97
+  },
+  {
+    "date": "2020-10-30",
+    "type": "Wiki\u5cf0\u503c",
+    "direction": "Wiki\u9886\u5148",
+    "g_value": 1.95,
+    "w_value": 7.2
+  },
+  {
+    "date": "2021-04-15",
+    "type": "Wiki\u5cf0\u503c",
+    "direction": "Wiki\u9886\u5148",
+    "g_value": 2.48,
+    "w_value": 7.38
+  },
+  {
+    "date": "2021-06-24",
+    "type": "GDELT\u5cf0\u503c",
+    "direction": "GDELT\u9886\u5148",
+    "g_value": 3.64,
+    "w_value": 5.81
+  },
+  {
+    "date": "2021-11-18",
+    "type": "Wiki\u5cf0\u503c",
+    "direction": "Wiki\u9886\u5148",
+    "g_value": 2.2,
+    "w_value": 6.93
+  },
+  {
+    "date": "2021-12-11",
+    "type": "GDELT\u5cf0\u503c",
+    "direction": "GDELT\u9886\u5148",
+    "g_value": 5.81,
+    "w_value": 5.84
+  },
+  {
+    "date": "2022-01-28",
+    "type": "GDELT\u5cf0\u503c",
+    "direction": "GDELT\u9886\u5148",
+    "g_value": 3.71,
+    "w_value": 5.95
+  },
+  {
+    "date": "2022-02-08",
+    "type": "Wiki\u5cf0\u503c",
+    "direction": "GDELT\u9886\u5148",
+    "g_value": 2.4,
+    "w_value": 6.95
+  },
+  {
+    "date": "2022-06-01",
+    "type": "Wiki\u5cf0\u503c",
+    "direction": "GDELT\u9886\u5148",
+    "g_value": 3.0,
+    "w_value": 7.51
+  },
+  {
+    "date": "2023-06-01",
+    "type": "GDELT\u5cf0\u503c",
+    "direction": "GDELT\u9886\u5148",
+    "g_value": 3.76,
+    "w_value": 5.9
+  },
+  {
+    "date": "2023-07-15",
+    "type": "GDELT\u5cf0\u503c",
+    "direction": "GDELT\u9886\u5148",
+    "g_value": 4.17,
+    "w_value": 5.67
+  },
+  {
+    "date": "2024-03-26",
+    "type": "Wiki\u5cf0\u503c",
+    "direction": "Wiki\u9886\u5148",
+    "g_value": 1.1,
+    "w_value": 7.88
+  }
+]

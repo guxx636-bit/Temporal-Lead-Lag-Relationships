@@ -1,0 +1,51 @@
+[
+  {
+    "name": "video_game_addiction",
+    "label": "Video Game Addiction",
+    "days": 1827,
+    "mean": 449.11220580186097,
+    "max": 2254
+  },
+  {
+    "name": "esports",
+    "label": "Esports",
+    "days": 1827,
+    "mean": 1829.7312534209086,
+    "max": 15257
+  },
+  {
+    "name": "loot_box",
+    "label": "Loot Box",
+    "days": 1827,
+    "mean": 385.8626163108922,
+    "max": 3516
+  },
+  {
+    "name": "video_game_violence",
+    "label": "Game Violence",
+    "days": 1827,
+    "mean": 315.2167487684729,
+    "max": 4043
+  },
+  {
+    "name": "screen_time",
+    "label": "Screen Time",
+    "days": 1827,
+    "mean": 307.3191023535851,
+    "max": 941
+  },
+  {
+    "name": "gaming_disorder",
+    "label": "Internet Gaming Disorder",
+    "days": 1455,
+    "mean": 5.048109965635739,
+    "max": 56
+  },
+  {
+    "name": "social_media_addiction",
+    "label": "Social Media Addiction",
+    "days": 1827,
+    "mean": 30.221674876847292,
+    "max": 312
+  }
+]
