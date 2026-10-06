@@ -199,9 +199,10 @@ for name in TOPICS:
     # 原始尺度
     u = OLS(yv, X).fit(cov_type="HAC", cov_kwds={"maxlags": 7})
     # 标准化尺度（全部变量 z-score 后重拟合，取虚拟变量系数）
+    # 检验口径与原始尺度保持一致：同为 Newey–West (HAC, maxlags=7)
     Xz = sm.add_constant(pd.concat(parts + [Dd], axis=1)[ok].apply(lambda c: (c - c.mean()) / c.std()))
     yz = (yv - yv.mean()) / yv.std()
-    uz = OLS(yz, Xz).fit()
+    uz = OLS(yz, Xz).fit(cov_type="HAC", cov_kwds={"maxlags": 7})
     for c in Dd.columns:
         rows_coef.append({"topic": name, "equation": "public",
                           "dummy": c, "model_lag": L,
