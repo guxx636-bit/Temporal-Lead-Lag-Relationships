@@ -146,8 +146,10 @@ for topic in TOPICS:
     max_lag = 30
 
     try:
-        gc_m2p = grangercausalitytests(data[["public", "media"]], max_lag, verbose=False)
-        gc_p2m = grangercausalitytests(data[["media", "public"]], max_lag, verbose=False)
+        # Note: statsmodels 0.15 removed the `verbose` argument from
+        # grangercausalitytests, so it is omitted here.
+        gc_m2p = grangercausalitytests(data[["public", "media"]], max_lag)
+        gc_p2m = grangercausalitytests(data[["media", "public"]], max_lag)
 
         # 找最优滞后（最小p值）
         best_m2p = min([(lag, gc_m2p[lag][0]["ssr_chi2test"][1]) for lag in range(1, max_lag+1)], key=lambda x: x[1])

@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+out/
+agenda_setting_results/
+.DS_Store
