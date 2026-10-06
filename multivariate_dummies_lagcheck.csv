@@ -1,0 +1,11 @@
+topic,direction,baseline_lag,mv_optimal_lag,lag_change_days,mv_p,significant_at_q05
+esports,media_to_public,5,7,2,3.022e-33,True
+esports,public_to_media,4,4,0,1.271e-31,True
+video_game_addiction,media_to_public,8,8,0,9.689e-15,True
+video_game_addiction,public_to_media,4,4,0,1.360e-17,True
+loot_box,media_to_public,20,8,-12,1.086e-03,True
+loot_box,public_to_media,1,1,0,7.469e-16,True
+screen_time,media_to_public,5,7,2,2.712e-31,True
+screen_time,public_to_media,4,4,0,6.372e-31,True
+video_game_violence,media_to_public,13,13,0,1.093e-07,True
+video_game_violence,public_to_media,10,10,0,3.807e-10,True
