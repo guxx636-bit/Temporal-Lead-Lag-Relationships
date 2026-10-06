@@ -292,19 +292,23 @@ for start in range(0, len(m) - 365 + 1, 30):
     s.columns = ["media", "public"]
     if len(s) < 300:
         rows.append({"window_start": str(win.date.iloc[0].date()), "window_end": str(win.date.iloc[-1].date()),
-                     "n_obs": len(s), "p_lag1": "", "p_min_30lags": "", "significant_05": ""})
+                     "n_obs": len(s), "p_lag1": "", "p_min_30lags": "", "argmin_lag_30": "",
+                     "significant_05": ""})
         continue
     gc1 = grangercausalitytests(s[["media", "public"]], 1)
     p1 = float(gc1[1][0]["ssr_chi2test"][1])
     gc30 = grangercausalitytests(s[["media", "public"]], 30)
-    pmin = min(float(gc30[L][0]["ssr_chi2test"][1]) for L in range(1, 31))
+    ps = {L: float(gc30[L][0]["ssr_chi2test"][1]) for L in range(1, 31)}
+    pmin = min(ps.values())
+    argmin = min(ps, key=ps.get)
     rows.append({"window_start": str(win.date.iloc[0].date()), "window_end": str(win.date.iloc[-1].date()),
                  "n_obs": len(s), "p_lag1": f"{p1:.4g}", "p_min_30lags": f"{pmin:.4g}",
-                 "significant_05": pmin < 0.05})
+                 "argmin_lag_30": argmin, "significant_05": pmin < 0.05})
 rw = pd.DataFrame(rows)
 rw.to_csv("rolling_window_lootbox.csv", index=False)
 sig = rw[rw.significant_05 != ""]
 share = (sig.significant_05 == True).mean() * 100 if len(sig) else float("nan")
 share_lag1 = (sig.p_lag1.astype(float) < 0.05).mean() * 100 if len(sig) else float("nan")
-print(f"  有效窗口 {len(sig)} | 逐窗最小 p (1–30 阶) P<.05 占比 {share:.1f}% | 固定 lag-1 P<.05 占比 {share_lag1:.1f}% | 正文声称 78%")
+share_argmin1 = (sig.argmin_lag_30.astype(float) == 1).mean() * 100 if len(sig) else float("nan")
+print(f"  有效窗口 {len(sig)} | 逐窗最小 p (1–30 阶) P<.05 占比 {share:.1f}% | 固定 lag-1 P<.05 占比 {share_lag1:.1f}% | 逐窗 argmin(1–30)=1 天 占比 {share_argmin1:.1f}%")
 print("\n完成。产出 7 份 CSV。")

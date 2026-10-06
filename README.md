@@ -66,6 +66,7 @@ pip install -r requirements.txt
 - `granger_analysis.py` — Granger causality tests and minimum-p lag selection.
 - `export_fdr_ljungbox.py` — BH-FDR q-values for all 300 tests, Ljung-Box residual diagnostics, HAC-robust Wald checks.
 - `export_robustness.py` — lockdown-exclusion re-estimation, dummy-augmented multivariate checks, Welch coherence spectra, per-event TLS, loot-box rolling windows.
+- `make_rolling_figure.py` — regenerates the rolling-window figure (`figures/rolling_window_lootbox.png`) from `rolling_window_lootbox.csv`.
 - `backtest_thresholds.py` — threshold-calibration backtest against the annotated peak events.
 - `make_figures.py` — time-series and peak-event figures.
 - `event_annotation.py` — builds the `*_events.json` ground-truth event annotations.
