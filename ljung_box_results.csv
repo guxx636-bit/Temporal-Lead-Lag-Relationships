@@ -1,0 +1,11 @@
+topic,direction,optimal_lag,n_obs,differencing_gdelt,differencing_wiki,lb10_stat,lb10_p,lbopt_stat,lbopt_p,resid_autocorr_at_5pct
+esports,media_to_public,5,1819,1,0,72.49,0.0,28.01,0.0,True
+esports,public_to_media,4,1820,1,0,588.96,0.0,75.39,0.0,True
+video_game_addiction,media_to_public,8,1817,0,0,36.49,0.0001,19.55,0.0122,True
+video_game_addiction,public_to_media,4,1821,0,0,101.86,0.0,38.0,0.0,True
+loot_box,media_to_public,20,1805,0,0,2.55,0.9901,9.63,0.9744,False
+loot_box,public_to_media,1,1824,0,0,223.52,0.0,7.87,0.005,True
+screen_time,media_to_public,5,1819,1,0,67.22,0.0,29.15,0.0,True
+screen_time,public_to_media,4,1820,1,0,579.84,0.0,73.64,0.0,True
+video_game_violence,media_to_public,13,1812,0,0,16.66,0.0823,37.15,0.0004,True
+video_game_violence,public_to_media,10,1815,0,0,10.9,0.3653,10.9,0.3653,False

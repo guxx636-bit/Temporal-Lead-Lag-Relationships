@@ -1,0 +1,11 @@
+topic,direction,optimal_lag,chi2_orig,p_orig,wald_hac_chi2,wald_df,p_hac,sig_05_orig,sig_05_hac
+esports,media_to_public,5,299.2448,1.455549019264091e-62,324.33,5,5.864470676413312e-68,True,True
+esports,public_to_media,4,155.324,1.4709358224741805e-32,37.32,4,1.5486119395241458e-07,True,True
+video_game_addiction,media_to_public,8,81.4666,2.4763674674004576e-14,79.31,8,6.727442107819435e-14,True,True
+video_game_addiction,public_to_media,4,83.5431,3.0902855601304163e-17,73.52,4,4.100602222437141e-15,True,True
+loot_box,media_to_public,20,46.5047,0.0006869027804691889,43.07,20,0.002002637772294985,True,True
+loot_box,public_to_media,1,69.0993,9.362715532911506e-17,66.33,1,3.8124477946790877e-16,True,True
+screen_time,media_to_public,5,283.5725,3.399563806619853e-59,76.8,5,3.906288233383399e-15,True,True
+screen_time,public_to_media,4,144.5804,2.949917189641427e-30,120.18,4,4.884759612974531e-25,True,True
+video_game_violence,media_to_public,13,57.246,1.62382744943959e-07,51.27,13,1.8015086446014165e-06,True,True
+video_game_violence,public_to_media,10,65.2874,3.5711886457459147e-10,60.26,10,3.237017863542042e-09,True,True
